@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8975A2551BB337510012C1E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8975A2531BB337510012C1E1 /* Main.storyboard */; };
 		89F4B4861BB33047005A7058 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F4B4851BB33047005A7058 /* main.m */; };
 		89F4B4891BB33047005A7058 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F4B4881BB33047005A7058 /* AppDelegate.m */; };
-		89F4B48C1BB33047005A7058 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F4B48B1BB33047005A7058 /* ViewController.m */; };
-		89F4B48F1BB33047005A7058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89F4B48D1BB33047005A7058 /* Main.storyboard */; };
 		89F4B4911BB33047005A7058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F4B4901BB33047005A7058 /* Assets.xcassets */; };
 		89F4B49C1BB33047005A7058 /* desafio_tvosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F4B49B1BB33047005A7058 /* desafio_tvosTests.m */; };
 		CFBAE0F01BDB3563EFB7F36F /* libPods-desafio-tvos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 411C586B88A4287479E4E1F1 /* libPods-desafio-tvos.a */; };
@@ -29,13 +28,11 @@
 /* Begin PBXFileReference section */
 		38FE98739EAE32EA0A162335 /* Pods-desafio-tvos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-tvos.release.xcconfig"; path = "Pods/Target Support Files/Pods-desafio-tvos/Pods-desafio-tvos.release.xcconfig"; sourceTree = "<group>"; };
 		411C586B88A4287479E4E1F1 /* libPods-desafio-tvos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-desafio-tvos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8975A2541BB337510012C1E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89F4B4811BB33046005A7058 /* desafio-tvos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-tvos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F4B4851BB33047005A7058 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		89F4B4871BB33047005A7058 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		89F4B4881BB33047005A7058 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		89F4B48A1BB33047005A7058 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		89F4B48B1BB33047005A7058 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		89F4B48E1BB33047005A7058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89F4B4901BB33047005A7058 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89F4B4921BB33047005A7058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89F4B4971BB33047005A7058 /* desafio-tvosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "desafio-tvosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +68,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8975A24E1BB336EC0012C1E1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8975A24F1BB336EC0012C1E1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8975A2501BB336EC0012C1E1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8975A2511BB337510012C1E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8975A2521BB337510012C1E1 /* storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8975A2521BB337510012C1E1 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8975A2531BB337510012C1E1 /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
 		89F4B4781BB33046005A7058 = {
 			isa = PBXGroup;
 			children = (
@@ -94,11 +128,12 @@
 		89F4B4831BB33046005A7058 /* desafio-tvos */ = {
 			isa = PBXGroup;
 			children = (
+				8975A2511BB337510012C1E1 /* Resources */,
+				8975A24E1BB336EC0012C1E1 /* Models */,
+				8975A24F1BB336EC0012C1E1 /* Services */,
+				8975A2501BB336EC0012C1E1 /* ViewControllers */,
 				89F4B4871BB33047005A7058 /* AppDelegate.h */,
 				89F4B4881BB33047005A7058 /* AppDelegate.m */,
-				89F4B48A1BB33047005A7058 /* ViewController.h */,
-				89F4B48B1BB33047005A7058 /* ViewController.m */,
-				89F4B48D1BB33047005A7058 /* Main.storyboard */,
 				89F4B4901BB33047005A7058 /* Assets.xcassets */,
 				89F4B4921BB33047005A7058 /* Info.plist */,
 				89F4B4841BB33046005A7058 /* Supporting Files */,
@@ -215,8 +250,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8975A2551BB337510012C1E1 /* Main.storyboard in Resources */,
 				89F4B4911BB33047005A7058 /* Assets.xcassets in Resources */,
-				89F4B48F1BB33047005A7058 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +302,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89F4B48C1BB33047005A7058 /* ViewController.m in Sources */,
 				89F4B4891BB33047005A7058 /* AppDelegate.m in Sources */,
 				89F4B4861BB33047005A7058 /* main.m in Sources */,
 			);
@@ -292,10 +326,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		89F4B48D1BB33047005A7058 /* Main.storyboard */ = {
+		8975A2531BB337510012C1E1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				89F4B48E1BB33047005A7058 /* Base */,
+				8975A2541BB337510012C1E1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

@@ -7,6 +7,7 @@ target 'desafio-tvos' do
     pod 'JSONModel', '~> 1.1'
     pod 'SDWebImage', '~> 3.7.3'
     pod 'SVProgressHUD', '~> 1.1.3'
+    pod 'UIScrollView-InfiniteScroll'
     pod 'UIActivityIndicator-for-SDWebImage', '~> 1.2'
 end
 
