@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89F4B4861BB33047005A7058 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F4B4851BB33047005A7058 /* main.m */; };
+		89F4B4891BB33047005A7058 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F4B4881BB33047005A7058 /* AppDelegate.m */; };
+		89F4B48C1BB33047005A7058 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F4B48B1BB33047005A7058 /* ViewController.m */; };
+		89F4B48F1BB33047005A7058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89F4B48D1BB33047005A7058 /* Main.storyboard */; };
+		89F4B4911BB33047005A7058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F4B4901BB33047005A7058 /* Assets.xcassets */; };
+		89F4B49C1BB33047005A7058 /* desafio_tvosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F4B49B1BB33047005A7058 /* desafio_tvosTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89F4B4981BB33047005A7058 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89F4B4791BB33046005A7058 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89F4B4801BB33046005A7058;
+			remoteInfo = "desafio-tvos";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		89F4B4811BB33046005A7058 /* desafio-tvos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-tvos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89F4B4851BB33047005A7058 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		89F4B4871BB33047005A7058 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		89F4B4881BB33047005A7058 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		89F4B48A1BB33047005A7058 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		89F4B48B1BB33047005A7058 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		89F4B48E1BB33047005A7058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		89F4B4901BB33047005A7058 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89F4B4921BB33047005A7058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89F4B4971BB33047005A7058 /* desafio-tvosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "desafio-tvosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89F4B49B1BB33047005A7058 /* desafio_tvosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = desafio_tvosTests.m; sourceTree = "<group>"; };
+		89F4B49D1BB33047005A7058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89F4B47E1BB33046005A7058 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89F4B4941BB33047005A7058 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89F4B4781BB33046005A7058 = {
+			isa = PBXGroup;
+			children = (
+				89F4B4831BB33046005A7058 /* desafio-tvos */,
+				89F4B49A1BB33047005A7058 /* desafio-tvosTests */,
+				89F4B4821BB33046005A7058 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89F4B4821BB33046005A7058 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89F4B4811BB33046005A7058 /* desafio-tvos.app */,
+				89F4B4971BB33047005A7058 /* desafio-tvosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89F4B4831BB33046005A7058 /* desafio-tvos */ = {
+			isa = PBXGroup;
+			children = (
+				89F4B4871BB33047005A7058 /* AppDelegate.h */,
+				89F4B4881BB33047005A7058 /* AppDelegate.m */,
+				89F4B48A1BB33047005A7058 /* ViewController.h */,
+				89F4B48B1BB33047005A7058 /* ViewController.m */,
+				89F4B48D1BB33047005A7058 /* Main.storyboard */,
+				89F4B4901BB33047005A7058 /* Assets.xcassets */,
+				89F4B4921BB33047005A7058 /* Info.plist */,
+				89F4B4841BB33046005A7058 /* Supporting Files */,
+			);
+			path = "desafio-tvos";
+			sourceTree = "<group>";
+		};
+		89F4B4841BB33046005A7058 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89F4B4851BB33047005A7058 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89F4B49A1BB33047005A7058 /* desafio-tvosTests */ = {
+			isa = PBXGroup;
+			children = (
+				89F4B49B1BB33047005A7058 /* desafio_tvosTests.m */,
+				89F4B49D1BB33047005A7058 /* Info.plist */,
+			);
+			path = "desafio-tvosTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89F4B4801BB33046005A7058 /* desafio-tvos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89F4B4A01BB33047005A7058 /* Build configuration list for PBXNativeTarget "desafio-tvos" */;
+			buildPhases = (
+				89F4B47D1BB33046005A7058 /* Sources */,
+				89F4B47E1BB33046005A7058 /* Frameworks */,
+				89F4B47F1BB33046005A7058 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "desafio-tvos";
+			productName = "desafio-tvos";
+			productReference = 89F4B4811BB33046005A7058 /* desafio-tvos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		89F4B4961BB33047005A7058 /* desafio-tvosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89F4B4A31BB33047005A7058 /* Build configuration list for PBXNativeTarget "desafio-tvosTests" */;
+			buildPhases = (
+				89F4B4931BB33047005A7058 /* Sources */,
+				89F4B4941BB33047005A7058 /* Frameworks */,
+				89F4B4951BB33047005A7058 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89F4B4991BB33047005A7058 /* PBXTargetDependency */,
+			);
+			name = "desafio-tvosTests";
+			productName = "desafio-tvosTests";
+			productReference = 89F4B4971BB33047005A7058 /* desafio-tvosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89F4B4791BB33046005A7058 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Concrete Solutions";
+				TargetAttributes = {
+					89F4B4801BB33046005A7058 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 83C3V38WSB;
+					};
+					89F4B4961BB33047005A7058 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 89F4B4801BB33046005A7058;
+					};
+				};
+			};
+			buildConfigurationList = 89F4B47C1BB33046005A7058 /* Build configuration list for PBXProject "desafio-tvos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 89F4B4781BB33046005A7058;
+			productRefGroup = 89F4B4821BB33046005A7058 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89F4B4801BB33046005A7058 /* desafio-tvos */,
+				89F4B4961BB33047005A7058 /* desafio-tvosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89F4B47F1BB33046005A7058 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89F4B4911BB33047005A7058 /* Assets.xcassets in Resources */,
+				89F4B48F1BB33047005A7058 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89F4B4951BB33047005A7058 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89F4B47D1BB33046005A7058 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89F4B48C1BB33047005A7058 /* ViewController.m in Sources */,
+				89F4B4891BB33047005A7058 /* AppDelegate.m in Sources */,
+				89F4B4861BB33047005A7058 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89F4B4931BB33047005A7058 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89F4B49C1BB33047005A7058 /* desafio_tvosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89F4B4991BB33047005A7058 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89F4B4801BB33046005A7058 /* desafio-tvos */;
+			targetProxy = 89F4B4981BB33047005A7058 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		89F4B48D1BB33047005A7058 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89F4B48E1BB33047005A7058 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89F4B49E1BB33047005A7058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		89F4B49F1BB33047005A7058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89F4B4A11BB33047005A7058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "desafio-tvos/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.concretesolutions.desafio-tvos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		89F4B4A21BB33047005A7058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "desafio-tvos/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.concretesolutions.desafio-tvos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		89F4B4A41BB33047005A7058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "desafio-tvosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.concretesolutions.desafio-tvosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desafio-tvos.app/desafio-tvos";
+			};
+			name = Debug;
+		};
+		89F4B4A51BB33047005A7058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "desafio-tvosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.concretesolutions.desafio-tvosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desafio-tvos.app/desafio-tvos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89F4B47C1BB33046005A7058 /* Build configuration list for PBXProject "desafio-tvos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89F4B49E1BB33047005A7058 /* Debug */,
+				89F4B49F1BB33047005A7058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89F4B4A01BB33047005A7058 /* Build configuration list for PBXNativeTarget "desafio-tvos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89F4B4A11BB33047005A7058 /* Debug */,
+				89F4B4A21BB33047005A7058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		89F4B4A31BB33047005A7058 /* Build configuration list for PBXNativeTarget "desafio-tvosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89F4B4A41BB33047005A7058 /* Debug */,
+				89F4B4A51BB33047005A7058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89F4B4791BB33046005A7058 /* Project object */;
+}

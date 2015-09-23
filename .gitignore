@@ -1,0 +1,44 @@
+# OS X Finder
+.DS_Store
+
+# Xcode per-user config
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+xcuserdata
+*.xccheckout
+*.xcworkspace/
+
+# Build products
+build/
+*.o
+*.LinkFileList
+*.hmap
+
+# Automatic backup files
+*~.nib/
+*.swp
+*~
+*.dat
+*.dep
+
+# Charts
+ObjcUML/
+Charts.dot
+Charts.png
+
+# Cocoapods
+Podfile.lock
+Pods
+
+# AppCode specific files
+.idea/
+*.iml
+
+# Fastlane
+fastlane/report.xml
+releases/
+coverage_reports/
