@@ -9,5 +9,6 @@
 #ifndef CommonDefines_h
 #define CommonDefines_h
 
+#define URL_BASE @"http://api.dribbble.com"
 
 #endif /* CommonDefines_h */
