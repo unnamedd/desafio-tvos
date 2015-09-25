@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8975A2551BB337510012C1E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8975A2531BB337510012C1E1 /* Main.storyboard */; };
+		8975A2591BB3397A0012C1E1 /* ShotModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8975A2581BB3397A0012C1E1 /* ShotModel.m */; };
+		8975A25C1BB33DC10012C1E1 /* Services.m in Sources */ = {isa = PBXBuildFile; fileRef = 8975A25B1BB33DC10012C1E1 /* Services.m */; };
+		8975A2601BB33FE20012C1E1 /* ShotsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8975A25F1BB33FE20012C1E1 /* ShotsService.m */; };
+		8975A2631BB347EE0012C1E1 /* ListPopularShotsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8975A2621BB347EE0012C1E1 /* ListPopularShotsViewController.m */; };
 		89F4B4861BB33047005A7058 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F4B4851BB33047005A7058 /* main.m */; };
 		89F4B4891BB33047005A7058 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F4B4881BB33047005A7058 /* AppDelegate.m */; };
 		89F4B4911BB33047005A7058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F4B4901BB33047005A7058 /* Assets.xcassets */; };
@@ -29,6 +33,15 @@
 		38FE98739EAE32EA0A162335 /* Pods-desafio-tvos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-tvos.release.xcconfig"; path = "Pods/Target Support Files/Pods-desafio-tvos/Pods-desafio-tvos.release.xcconfig"; sourceTree = "<group>"; };
 		411C586B88A4287479E4E1F1 /* libPods-desafio-tvos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-desafio-tvos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8975A2541BB337510012C1E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8975A2561BB3384F0012C1E1 /* Models.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
+		8975A2571BB3397A0012C1E1 /* ShotModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShotModel.h; sourceTree = "<group>"; };
+		8975A2581BB3397A0012C1E1 /* ShotModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShotModel.m; sourceTree = "<group>"; };
+		8975A25A1BB33DC10012C1E1 /* Services.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Services.h; sourceTree = "<group>"; };
+		8975A25B1BB33DC10012C1E1 /* Services.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Services.m; sourceTree = "<group>"; };
+		8975A25D1BB33E670012C1E1 /* CommonDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDefines.h; sourceTree = "<group>"; };
+		8975A25F1BB33FE20012C1E1 /* ShotsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShotsService.m; sourceTree = "<group>"; };
+		8975A2611BB347EE0012C1E1 /* ListPopularShotsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListPopularShotsViewController.h; sourceTree = "<group>"; };
+		8975A2621BB347EE0012C1E1 /* ListPopularShotsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListPopularShotsViewController.m; sourceTree = "<group>"; };
 		89F4B4811BB33046005A7058 /* desafio-tvos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-tvos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F4B4851BB33047005A7058 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		89F4B4871BB33047005A7058 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -71,6 +84,9 @@
 		8975A24E1BB336EC0012C1E1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8975A2561BB3384F0012C1E1 /* Models.h */,
+				8975A2571BB3397A0012C1E1 /* ShotModel.h */,
+				8975A2581BB3397A0012C1E1 /* ShotModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -78,6 +94,9 @@
 		8975A24F1BB336EC0012C1E1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8975A25A1BB33DC10012C1E1 /* Services.h */,
+				8975A25B1BB33DC10012C1E1 /* Services.m */,
+				8975A25F1BB33FE20012C1E1 /* ShotsService.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -85,6 +104,8 @@
 		8975A2501BB336EC0012C1E1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8975A2611BB347EE0012C1E1 /* ListPopularShotsViewController.h */,
+				8975A2621BB347EE0012C1E1 /* ListPopularShotsViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -145,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				89F4B4851BB33047005A7058 /* main.m */,
+				8975A25D1BB33E670012C1E1 /* CommonDefines.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -302,7 +324,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8975A2591BB3397A0012C1E1 /* ShotModel.m in Sources */,
+				8975A25C1BB33DC10012C1E1 /* Services.m in Sources */,
+				8975A2601BB33FE20012C1E1 /* ShotsService.m in Sources */,
 				89F4B4891BB33047005A7058 /* AppDelegate.m in Sources */,
+				8975A2631BB347EE0012C1E1 /* ListPopularShotsViewController.m in Sources */,
 				89F4B4861BB33047005A7058 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,8 +452,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "desafio-tvos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.concretesolutions.desafio-tvos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 			};
 			name = Debug;
 		};
@@ -440,8 +472,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "desafio-tvos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.concretesolutions.desafio-tvos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 			};
 			name = Release;
 		};
