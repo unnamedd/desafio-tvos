@@ -6,8 +6,4 @@
 //  Copyright © 2015 Concrete Solutions. All rights reserved.
 //
 
-#ifndef Models_h
-#define Models_h
-
-
-#endif /* Models_h */
+#import "ShotModel.h"
