@@ -17,6 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [JSONModel setGlobalKeyMapper:[
+                                   [JSONKeyMapper alloc] initWithDictionary:@{
+                                                                              @"id":@"uuid",
+                                                                              @"description":@"descriptions"
+                                                                              }]
+     ];
     return YES;
 }
 
