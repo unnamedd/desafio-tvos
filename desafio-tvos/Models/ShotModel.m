@@ -10,4 +10,16 @@
 
 @implementation ShotModel
 
++ (BOOL) propertyIsOptional:(NSString*) propertyName {
+    return YES;
+}
+
+@end
+
+@implementation PlayerModel
+
++ (BOOL) propertyIsOptional:(NSString*) propertyName {
+    return YES;
+}
+
 @end
