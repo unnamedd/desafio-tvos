@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 // Models
 #import "Models.h"
@@ -14,8 +15,9 @@
 // Generic
 typedef void (^BaseServiceResponseBlock)(NSURLResponse *response, id responseObject, NSError *error);
 
-typedef void (^ServiceResultListBlock)(NSArray *response, NSInteger totalPages, NSError *error);
+typedef void (^ServiceResultListBlock)(NSArray *items, NSInteger totalPages, NSError *error);
 typedef void (^ServiceResultObjectBlock)(id object, BOOL success, NSError *error);
+typedef void (^ServiceResultImageBlock)(UIImage *image, NSError *error);
 
 // Shots
 typedef void (^ServiceResultShotBlock)(ShotModel *shot, NSError *error);
@@ -29,6 +31,10 @@ typedef void (^ServiceResultShotBlock)(ShotModel *shot, NSError *error);
 - (void) GET: (NSString *) URLString
   parameters: (NSDictionary *) parameters
     complete: (BaseServiceResponseBlock) complete;
+
+#pragma mark - Download Image
+- (void) downloadImageWithURL:(NSString *) URLString
+                     complete:(ServiceResultImageBlock) complete;
 
 @end
 

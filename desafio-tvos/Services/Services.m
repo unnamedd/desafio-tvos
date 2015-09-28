@@ -72,6 +72,25 @@
     return fullURL;
 }
 
+- (void) downloadImageWithURL:(NSString *) URLString complete:(ServiceResultImageBlock) complete {
+    NSURL *URL = [self URL: URLString serializeParameters: nil];
+    
+    [[self.baseSession downloadTaskWithURL: URL completionHandler:^(NSURL * location, NSURLResponse * response, NSError * error) {
+        if (!error) {
+            
+            NSData *imageData = [NSData dataWithContentsOfURL: location];
+            UIImage *downloadedImage = [UIImage imageWithData: imageData];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (complete)
+                    complete(downloadedImage, error);
+            });
+            
+        }
+    }] resume];
+}
+
+
 - (void) GET:(NSString *) URLString parameters:(NSDictionary *) parameters complete:(BaseServiceResponseBlock) complete {
 
     NSURL *URL = [self URL: URLString
