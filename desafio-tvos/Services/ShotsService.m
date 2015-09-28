@@ -65,7 +65,28 @@
     [self.baseService GET: URL
                parameters: params
                  complete:^(NSURLResponse *response, id responseObject, NSError *error) {
-                     NSLog(@"Object: %@", responseObject);
+                     
+                     NSMutableArray *shots = [NSMutableArray new];
+                     NSInteger totalPages = 0;
+                     
+                     if (!error) {
+                         NSDictionary *responseDictionary = (NSDictionary *)responseObject;
+                         totalPages = [[responseDictionary objectForKey:@"pages"] integerValue];
+                         NSArray *items = [NSArray arrayWithArray: [responseDictionary objectForKey:@"shots"]];
+
+                         [items enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
+                             
+                             NSError *errorModel = nil;
+                             ShotModel *shot = [[ShotModel alloc] initWithDictionary: obj
+                                                                               error: &errorModel];
+                             
+                             if (!errorModel)
+                                 [shots addObject:shot];
+                         }];
+                     }
+                     
+                     if (complete)
+                         complete(shots, totalPages, error);
                  }];
 }
 
