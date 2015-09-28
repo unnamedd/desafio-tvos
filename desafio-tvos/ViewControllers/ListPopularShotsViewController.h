@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListPopularShotsViewController : UIViewController
+@interface ListPopularShotsViewController : UICollectionViewController
 
 @end
