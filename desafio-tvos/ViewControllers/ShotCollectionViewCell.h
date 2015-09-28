@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "Models.h"
+
 @interface ShotCollectionViewCell : UICollectionViewCell
+
+@property (strong, nonatomic) ShotModel *shotObject;
+
++ (NSString *) cellIdentifier;
 
 @end
