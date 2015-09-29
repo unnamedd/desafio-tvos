@@ -41,14 +41,14 @@
 
 #pragma mark - Requests
 
-- (void) doRequestPopularShots {
+- (void) requestPopularShots {
     [[ShotsService sharedInstance] listPopularWithPage:0 complete:^(NSArray *items, NSInteger totalPages, NSError *error) {
-        
         if (!error) {
-            self.shotsSource = [NSArray arrayWithArray:items];
-            [self.collectionView reloadData];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.shotsSource = [NSArray arrayWithArray: items];
+                [self.collectionView reloadData];
+            });
         }
-        
     }];
 }
 
