@@ -26,7 +26,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self doRequestPopularShots];
+    // Custom Collection View Cell
+    UINib *shotCollectionViewCellNib = [UINib nibWithNibName: @"ShotCollectionViewCell" bundle: nil];
+    [self.collectionView registerNib: shotCollectionViewCellNib
+          forCellWithReuseIdentifier: [ShotCollectionViewCell cellIdentifier]];
+    
+    [self requestPopularShots];
 }
 
 - (void)didReceiveMemoryWarning {
