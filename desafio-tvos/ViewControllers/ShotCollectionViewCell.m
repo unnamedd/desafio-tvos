@@ -43,7 +43,7 @@
                 }
             }];
         }
-    
+        
         // Shot activities
         NSMutableString *activityMutableString = [NSMutableString new];
         if (shotObject.views_count > 0)
@@ -66,8 +66,10 @@
         // Player avatar image
         if (shotObject.player.avatar_url) {
             [[BaseService sharedInstance] downloadImageWithURL: shotObject.player.avatar_url complete:^(UIImage *image, NSError *error) {
-                if (!error)
+                if (!error) {
                     [self.teamImageView setImage: image];
+                    self.teamImageView.layer.cornerRadius = self.teamImageView.frame.size.height / 2;
+                }
                 else
                     self.teamImageView.hidden = YES;
             }];
