@@ -13,6 +13,7 @@
 		8975A2601BB33FE20012C1E1 /* ShotsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8975A25F1BB33FE20012C1E1 /* ShotsService.m */; };
 		8975A2631BB347EE0012C1E1 /* ListPopularShotsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8975A2621BB347EE0012C1E1 /* ListPopularShotsViewController.m */; };
 		8981DCB21BB5ABA400AD9749 /* ShotCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8981DCB11BB5ABA400AD9749 /* ShotCollectionViewCell.m */; };
+		89B5FA471BBB3201007668F6 /* ShotCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89B5FA461BBB3201007668F6 /* ShotCollectionViewCell.xib */; };
 		89F4B4861BB33047005A7058 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F4B4851BB33047005A7058 /* main.m */; };
 		89F4B4891BB33047005A7058 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F4B4881BB33047005A7058 /* AppDelegate.m */; };
 		89F4B4911BB33047005A7058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F4B4901BB33047005A7058 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		8975A2621BB347EE0012C1E1 /* ListPopularShotsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListPopularShotsViewController.m; sourceTree = "<group>"; };
 		8981DCB01BB5ABA400AD9749 /* ShotCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShotCollectionViewCell.h; sourceTree = "<group>"; };
 		8981DCB11BB5ABA400AD9749 /* ShotCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShotCollectionViewCell.m; sourceTree = "<group>"; };
+		89B5FA461BBB3201007668F6 /* ShotCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShotCollectionViewCell.xib; sourceTree = "<group>"; };
 		89F4B4811BB33046005A7058 /* desafio-tvos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-tvos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F4B4851BB33047005A7058 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		89F4B4871BB33047005A7058 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		8975A2511BB337510012C1E1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				89B5FA451BBB31CB007668F6 /* xibs */,
 				8975A2521BB337510012C1E1 /* storyboards */,
 			);
 			path = Resources;
@@ -137,6 +140,14 @@
 				8981DCB11BB5ABA400AD9749 /* ShotCollectionViewCell.m */,
 			);
 			name = collectionviewcell;
+			sourceTree = "<group>";
+		};
+		89B5FA451BBB31CB007668F6 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				89B5FA461BBB3201007668F6 /* ShotCollectionViewCell.xib */,
+			);
+			path = xibs;
 			sourceTree = "<group>";
 		};
 		89F4B4781BB33046005A7058 = {
@@ -287,6 +298,7 @@
 			files = (
 				8975A2551BB337510012C1E1 /* Main.storyboard in Resources */,
 				89F4B4911BB33047005A7058 /* Assets.xcassets in Resources */,
+				89B5FA471BBB3201007668F6 /* ShotCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
