@@ -9,10 +9,12 @@
 #import "ListRecentShotsViewController.h"
 #import "Services.h"
 #import "ShotCollectionViewCell.h"
+#import "ShotViewController.h"
 
 @interface ListRecentShotsViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (strong, nonatomic) NSArray *shots;
+@property (nonatomic, strong) ShotModel *shot;
 
 @end
 
@@ -40,7 +42,10 @@
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
+    if ([segue.identifier isEqualToString:@""]) {
+        ShotViewController *viewController = [segue destinationViewController];
+        viewController.shot = self.shot;
+    }
 }
 
 
@@ -83,8 +88,8 @@
 
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    ShotModel *selectedShot = [self.shots objectAtIndex: indexPath.item];
-    NSLog(@"Shot Mode: %@", selectedShot);
+    self.shot = [self.shots objectAtIndex: indexPath.item];
+    NSLog(@"Shot Mode: %@", self.shot);
 }
 
 
