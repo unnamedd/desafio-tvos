@@ -4,28 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
     </dependencies>
     <scenes>
-        <!--Teams-->
-        <scene sceneID="7Tx-LZ-x7e">
-            <objects>
-                <viewController id="qGz-7V-Sum" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="yMs-KU-wTQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="MNP-VQ-kk9"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="GYH-8d-tm0">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Teams" id="cju-BV-XGN"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a2l-eW-wlb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1783" y="2466"/>
-        </scene>
         <!--Recent-->
         <scene sceneID="ZXE-jE-qAi">
             <objects>
-                <collectionViewController id="v6a-2t-ZKy" customClass="ListPopularShotsViewController" sceneMemberID="viewController">
+                <collectionViewController id="v6a-2t-ZKy" customClass="ListRecentShotsViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" dataMode="prototypes" id="Gdc-7E-Vy7">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,25 +27,32 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ox6-cL-6mL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1783" y="3679"/>
+            <point key="canvasLocation" x="-5319" y="3511"/>
         </scene>
         <!--Popular-->
-        <scene sceneID="fDF-pl-MMh">
+        <scene sceneID="O0V-xJ-W1Z">
             <objects>
-                <viewController id="esq-jZ-nyg" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fwC-zD-Eu5"/>
-                        <viewControllerLayoutGuide type="bottom" id="TCb-9V-H2y"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5D2-lz-oHQ">
+                <collectionViewController id="0ax-52-D8G" customClass="ListPopularShotsViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" dataMode="prototypes" id="rcu-Oc-bBn">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Popular" id="Q9q-JX-a7p"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qac-W4-sIZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="3" id="XT4-jh-uYH">
+                            <size key="itemSize" width="350" height="343"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="20"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="0ax-52-D8G" id="siv-ab-9k8"/>
+                            <outlet property="delegate" destination="0ax-52-D8G" id="JsW-D6-HRy"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Popular" id="Q7f-dk-fj0"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MCR-zP-XH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1783" y="1329"/>
+            <point key="canvasLocation" x="-3063" y="3511"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Dog-ii-X0C">
@@ -75,9 +64,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="esq-jZ-nyg" kind="relationship" relationship="viewControllers" id="SSr-nn-X6o"/>
-                        <segue destination="qGz-7V-Sum" kind="relationship" relationship="viewControllers" id="bzb-Vc-l0m"/>
                         <segue destination="v6a-2t-ZKy" kind="relationship" relationship="viewControllers" id="FPd-ux-xdZ"/>
+                        <segue destination="0ax-52-D8G" kind="relationship" relationship="viewControllers" id="Jmb-Un-ga4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ECO-Do-7bv" userLabel="First Responder" sceneMemberID="firstResponder"/>

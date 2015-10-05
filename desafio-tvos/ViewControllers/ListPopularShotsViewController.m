@@ -82,4 +82,9 @@
     return YES;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    ShotModel *shotSelected = [self.shotsSource objectAtIndex: indexPath.item];
+    NSLog(@"Shot Mode; %@", shotSelected);
+}
+
 @end

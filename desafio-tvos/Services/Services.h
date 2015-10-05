@@ -46,5 +46,5 @@ typedef void (^ServiceResultShotBlock)(ShotModel *shot, NSError *error);
 #pragma mark - Request Methods
 - (void) get:(ShotModel *) shot complete:(ServiceResultShotBlock) complete;
 - (void) listPopularWithPage:(NSInteger) page complete:(ServiceResultListBlock) complete;
-
+- (void)listRecentWithPage:(NSInteger)page complete:(ServiceResultListBlock)complete;
 @end

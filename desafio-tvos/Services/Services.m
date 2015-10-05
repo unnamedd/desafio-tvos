@@ -96,6 +96,8 @@
     NSURL *URL = [self URL: URLString
        serializeParameters: parameters];
     
+    NSLog(@"URL: %@", URL.absoluteString);
+    
     NSURLRequest *request = [NSURLRequest requestWithURL: URL];
     
     [[self.baseSession dataTaskWithRequest: request

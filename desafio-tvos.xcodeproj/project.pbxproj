@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28B4C1E71BC2F90C0059C73B /* ListRecentShotsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B4C1E61BC2F90C0059C73B /* ListRecentShotsViewController.m */; };
 		8975A2551BB337510012C1E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8975A2531BB337510012C1E1 /* Main.storyboard */; };
 		8975A2591BB3397A0012C1E1 /* ShotModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8975A2581BB3397A0012C1E1 /* ShotModel.m */; };
 		8975A25C1BB33DC10012C1E1 /* Services.m in Sources */ = {isa = PBXBuildFile; fileRef = 8975A25B1BB33DC10012C1E1 /* Services.m */; };
@@ -32,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28B4C1E51BC2F90C0059C73B /* ListRecentShotsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListRecentShotsViewController.h; sourceTree = "<group>"; };
+		28B4C1E61BC2F90C0059C73B /* ListRecentShotsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListRecentShotsViewController.m; sourceTree = "<group>"; };
 		38FE98739EAE32EA0A162335 /* Pods-desafio-tvos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-tvos.release.xcconfig"; path = "Pods/Target Support Files/Pods-desafio-tvos/Pods-desafio-tvos.release.xcconfig"; sourceTree = "<group>"; };
 		411C586B88A4287479E4E1F1 /* libPods-desafio-tvos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-desafio-tvos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8975A2541BB337510012C1E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +115,8 @@
 				8981DCB31BB5ABA800AD9749 /* collectionviewcell */,
 				8975A2611BB347EE0012C1E1 /* ListPopularShotsViewController.h */,
 				8975A2621BB347EE0012C1E1 /* ListPopularShotsViewController.m */,
+				28B4C1E51BC2F90C0059C73B /* ListRecentShotsViewController.h */,
+				28B4C1E61BC2F90C0059C73B /* ListRecentShotsViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -356,6 +361,7 @@
 				8975A2631BB347EE0012C1E1 /* ListPopularShotsViewController.m in Sources */,
 				8981DCB21BB5ABA400AD9749 /* ShotCollectionViewCell.m in Sources */,
 				89F4B4861BB33047005A7058 /* main.m in Sources */,
+				28B4C1E71BC2F90C0059C73B /* ListRecentShotsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
