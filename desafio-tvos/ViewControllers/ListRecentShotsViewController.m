@@ -18,8 +18,6 @@
 
 @end
 
-
-
 @implementation ListRecentShotsViewController
 
 - (void)viewDidLoad {
@@ -42,13 +40,11 @@
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"ShotSegue"]) {
+    if ([segue.identifier isEqualToString:@"recentShotSegue"]) {
         ShotViewController *viewController = [segue destinationViewController];
-        viewController.shot = self.shot;
+        viewController.shotObject = self.shot;
     }
 }
-
-
 
 #pragma mark - Requests
 
@@ -89,8 +85,8 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     self.shot = [self.shots objectAtIndex: indexPath.item];
-    
-    NSLog(@"Shot Mode: %@", self.shot);
+    [self performSegueWithIdentifier: @"recentShotSegue"
+                              sender: nil];
 }
 
 

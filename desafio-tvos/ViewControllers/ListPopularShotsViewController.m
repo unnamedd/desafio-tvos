@@ -14,9 +14,14 @@
 // Custom View
 #import "ShotCollectionViewCell.h"
 
+#import "Models.h"
+
+#import "ShotViewController.h"
+
 @interface ListPopularShotsViewController () <UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (strong, nonatomic) NSArray *shotsSource;
+@property (strong, nonatomic) ShotModel *shot;
 
 @end
 
@@ -52,15 +57,16 @@
     }];
 }
 
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"popularShotSegue"]) {
+        ShotViewController *viewController = [segue destinationViewController];
+        viewController.shotObject = self.shot;
+    }
 }
-*/
+
 
 #pragma mark - UICollectionView Data Source
 
@@ -83,8 +89,9 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    ShotModel *shotSelected = [self.shotsSource objectAtIndex: indexPath.item];
-    NSLog(@"Shot Mode; %@", shotSelected);
+    self.shot = [self.shotsSource objectAtIndex: indexPath.item];
+    [self performSegueWithIdentifier: @"popularShotSegue"
+                              sender: nil];
 }
 
 @end
