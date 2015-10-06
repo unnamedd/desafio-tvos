@@ -72,9 +72,7 @@
                      NSInteger totalPages = 0;
                      
                      if (!error) {
-                         NSDictionary *responseDictionary = (NSDictionary *)responseObject;
-                         totalPages = [[responseDictionary objectForKey:@"pages"] integerValue];
-                         NSArray *items = [NSArray arrayWithArray: [responseDictionary objectForKey:@"shots"]];
+                         NSArray *items = [NSArray arrayWithArray: responseObject];
 
                          [items enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
                              
@@ -106,13 +104,12 @@
                      NSInteger totalPages = 0;
                      
                      if (!error) {
-                         NSDictionary *responseDictionary = (NSDictionary *)responseObject;
-                         totalPages = [[responseDictionary objectForKey:@"pages"] integerValue];
-                         NSArray *items = [NSArray arrayWithArray: [responseDictionary objectForKey:@"shots"]];
+                         NSArray *items = [NSArray arrayWithArray: responseObject];
                          
                          [items enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
                              NSError *errorModel = nil;
-                             ShotModel *shot = [[ShotModel alloc] initWithDictionary: obj error: &errorModel];
+                             ShotModel *shot = [[ShotModel alloc] initWithDictionary: obj
+                                                                               error: &errorModel];
                              
                              if (!errorModel)
                                  [shots addObject:shot];
