@@ -66,7 +66,12 @@
     if (query.length > 0)
         query = [NSString stringWithFormat:@"?%@", query];
     
-    NSURL *fullURL = [NSURL URLWithString: [URLString stringByAppendingString:query]
+    NSMutableString *mutableURL = [NSMutableString string];
+    [mutableURL appendString: @"/v1"];
+    [mutableURL appendString: URLString];
+    [mutableURL appendString: query];
+    
+    NSURL *fullURL = [NSURL URLWithString: mutableURL
                             relativeToURL: self.baseURL];
     
     return fullURL;

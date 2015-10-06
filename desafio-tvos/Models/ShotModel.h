@@ -8,6 +8,14 @@
 
 #import "JSONModel.h"
 
+@interface Images : JSONModel
+
+@property (strong, nonatomic) NSString *hidpi;
+@property (strong, nonatomic) NSString *normal;
+@property (strong, nonatomic) NSString *teaser;
+
+@end
+
 @interface PlayerModel : JSONModel
 
 @property (strong, nonatomic) NSNumber *uuid;
@@ -47,10 +55,8 @@
 @property (strong, nonatomic) NSString *short_url;
 @property (assign, nonatomic) int views_count;
 @property (strong, nonatomic) NSString *rebound_source_id;
-@property (strong, nonatomic) NSString *image_url;
-@property (strong, nonatomic) NSString *image_teaser_url;
-@property (strong, nonatomic) NSString *image_400_url;
-@property (strong, nonatomic) PlayerModel *player;
+@property (strong, nonatomic) Images *images;
+@property (strong, nonatomic) PlayerModel *user;
 @property (strong, nonatomic) NSDate *created_at;
 
 @end

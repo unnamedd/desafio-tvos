@@ -8,6 +8,14 @@
 
 #import "ShotModel.h"
 
+@implementation Images
+
++ (BOOL) propertyIsOptional:(NSString*) propertyName {
+    return YES;
+}
+
+@end
+
 @implementation ShotModel
 
 + (BOOL) propertyIsOptional:(NSString*) propertyName {
