@@ -485,7 +485,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C803EA4B1B5699003B0DD584 /* Pods-desafio-tvos.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "desafio-tvos/Info.plist";
@@ -505,7 +505,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 38FE98739EAE32EA0A162335 /* Pods-desafio-tvos.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "desafio-tvos/Info.plist";
