@@ -25,6 +25,9 @@
                         </connections>
                     </collectionView>
                     <tabBarItem key="tabBarItem" title="Recent" id="dwA-Ih-yzK"/>
+                    <connections>
+                        <segue destination="nuQ-1S-mdp" kind="show" identifier="recentShotSegue" id="7AI-rM-fSe"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ox6-cL-6mL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,7 +55,7 @@
                     </collectionView>
                     <tabBarItem key="tabBarItem" title="Popular" id="Q7f-dk-fj0"/>
                     <connections>
-                        <segue destination="nuQ-1S-mdp" kind="show" identifier="ShotSegue" id="bK3-XE-AP8"/>
+                        <segue destination="nuQ-1S-mdp" kind="show" identifier="popularShotSegue" id="bK3-XE-AP8"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MCR-zP-XH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -72,58 +75,82 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T4E-Ti-OA3">
-                                <rect key="frame" x="185" y="201" width="50" height="50"/>
+                                <rect key="frame" x="63" y="148" width="148" height="148"/>
                                 <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ePu-Z9-DvT">
-                                <rect key="frame" x="191" y="267" width="300" height="300"/>
+                                <rect key="frame" x="63" y="318" width="700" height="700"/>
                                 <animations/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dunns" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Jf-bx-kfS">
-                                <rect key="frame" x="243" y="201" width="50" height="21"/>
+                                <rect key="frame" x="243" y="148" width="520" height="86"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="by Nick Slater" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdP-hC-2LJ">
-                                <rect key="frame" x="243" y="230" width="106" height="21"/>
+                                <rect key="frame" x="243" y="248" width="520" height="48"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10 buckets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSL-aa-QPk">
-                                <rect key="frame" x="584" y="355" width="83" height="21"/>
+                                <rect key="frame" x="771" y="770" width="600" height="40"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oct 5, 2015 | @2x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDl-dE-uQA">
-                                <rect key="frame" x="368" y="230" width="137" height="21"/>
+                                <rect key="frame" x="63" y="1026" width="700" height="51"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="244 likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qp-Ww-ml1">
-                                <rect key="frame" x="558" y="230" width="70" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1,810 views" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csU-5U-7P5">
-                                <rect key="frame" x="558" y="267" width="87" height="21"/>
+                                <rect key="frame" x="771" y="818" width="600" height="40"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVJ-Hm-r9e">
+                                <rect key="frame" x="776" y="318" width="1096" height="386"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="1T5-DF-x55">
+                                <rect key="frame" x="381" y="636" width="64" height="64"/>
+                                <animations/>
+                                <color key="color" red="1" green="0.43936801549999999" blue="0.0019964527460000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="244 likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qp-Ww-ml1">
+                                <rect key="frame" x="771" y="722" width="600" height="40"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <animations/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="1T5-DF-x55" id="opS-l0-uLZ"/>
+                        <outlet property="commentsLabel" destination="lSL-aa-QPk" id="Lml-Xz-ZdU"/>
+                        <outlet property="dateLabel" destination="pDl-dE-uQA" id="j6h-yt-nSu"/>
+                        <outlet property="descriptionLabel" destination="TVJ-Hm-r9e" id="xjJ-N0-rGw"/>
+                        <outlet property="imageView" destination="ePu-Z9-DvT" id="3hg-ag-4zz"/>
+                        <outlet property="likesLabel" destination="2Qp-Ww-ml1" id="6ck-ag-fm6"/>
+                        <outlet property="nameLabel" destination="YdP-hC-2LJ" id="poL-dS-g3a"/>
+                        <outlet property="playerImageView" destination="T4E-Ti-OA3" id="XSR-W1-Z1b"/>
+                        <outlet property="playerNameLabel" destination="YdP-hC-2LJ" id="epx-cJ-Nly"/>
+                        <outlet property="viewsLabel" destination="csU-5U-7P5" id="fxL-SX-I4b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="79v-Mg-Aow" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -149,4 +176,7 @@
             <point key="canvasLocation" x="-4169" y="1911"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="7AI-rM-fSe"/>
+    </inferredMetricsTieBreakers>
 </document>
