@@ -33,15 +33,16 @@
     if (shotObject) {
         
         // Shot image
-        if (shotObject.image_url) {
+        if (shotObject.images.normal) {
             [self.activityIndicator startAnimating];
             
-            [[BaseService sharedInstance] downloadImageWithURL: shotObject.image_url complete:^(UIImage *image, NSError *error) {
-                if (!error) {
-                    [self.shotImageView setImage: image];
-                    [self.activityIndicator stopAnimating];
-                }
-            }];
+            [[BaseService sharedInstance] downloadImageWithURL: shotObject.images.normal
+                                                      complete:^(UIImage *image, NSError *error) {
+                                                          if (!error) {
+                                                              [self.shotImageView setImage: image];
+                                                              [self.activityIndicator stopAnimating];
+                                                          }
+                                                      }];
         }
         
         // Shot activities
@@ -59,13 +60,13 @@
             self.activityLabel.text = activityMutableString;
         
         
-        if (shotObject.player.name) {
-            self.teamLabel.text = shotObject.player.name;
+        if (shotObject.user.name) {
+            self.teamLabel.text = shotObject.user.name;
         }
         
         // Player avatar image
-        if (shotObject.player.avatar_url) {
-            [[BaseService sharedInstance] downloadImageWithURL: shotObject.player.avatar_url complete:^(UIImage *image, NSError *error) {
+        if (shotObject.user.avatar_url) {
+            [[BaseService sharedInstance] downloadImageWithURL: shotObject.user.avatar_url complete:^(UIImage *image, NSError *error) {
                 if (!error) {
                     [self.teamImageView setImage: image];
                     self.teamImageView.layer.cornerRadius = self.teamImageView.frame.size.height / 2;
