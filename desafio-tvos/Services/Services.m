@@ -98,7 +98,10 @@
     
     NSLog(@"URL: %@", URL.absoluteString);
     
-    NSURLRequest *request = [NSURLRequest requestWithURL: URL];
+    NSString *authorizationBearer = [NSString stringWithFormat: @"Bearer %@", ACCESS_TOKEN];
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL: URL];
+    [request setValue: authorizationBearer forHTTPHeaderField: @"Authorization"];
     
     [[self.baseSession dataTaskWithRequest: request
                          completionHandler: ^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
