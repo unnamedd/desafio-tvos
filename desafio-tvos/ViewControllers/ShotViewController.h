@@ -11,6 +11,6 @@
 
 @interface ShotViewController : UIViewController
 
-@property (nonatomic, strong) ShotModel *shot;
+@property (nonatomic, strong) ShotModel *shotObject;
 
 @end
