@@ -36,7 +36,7 @@
 }
 
 
-- (void)get:(ShotModel *)shot complete:(ServiceResultShotBlock)complete {
+- (void) get:(ShotModel *) shot complete:(ServiceResultShotBlock) complete {
     NSString *URL = [NSString stringWithFormat:@"/shots/%@", shot.uuid];
     
     [self.baseService GET: URL
@@ -57,10 +57,10 @@
 
 
 - (void) listPopularWithPage:(NSInteger) page complete:(ServiceResultListBlock) complete {
-    NSString *URL = @"/shots/popular";
+    NSString *URL = @"/shots";
     
     NSDictionary *params = @{
-                             @"per_page": @(10),
+                             @"per_page": @(20),
                              @"page": @(page)
                              };
     
@@ -95,31 +95,33 @@
 
 - (void)listRecentWithPage:(NSInteger)page complete:(ServiceResultListBlock)complete {
     NSString *URL = @"/shots?sort=recent";
-//    https://dribbble.com/shots?sort=recent&per_page=10&page=0
-    NSDictionary *params = @{@"per_page": @(10),
+
+    NSDictionary *params = @{@"per_page": @(20),
                              @"page":     @(page)};
     
-    [self.baseService GET:URL parameters:nil complete:^(NSURLResponse *response, id responseObject, NSError *error) {
-         NSMutableArray *shots = [NSMutableArray new];
-         NSInteger totalPages = 0;
-         
-         if (!error) {
-             NSDictionary *responseDictionary = (NSDictionary *)responseObject;
-             totalPages = [[responseDictionary objectForKey:@"pages"] integerValue];
-             NSArray *items = [NSArray arrayWithArray: [responseDictionary objectForKey:@"shots"]];
-             
-             [items enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
-                 NSError *errorModel = nil;
-                 ShotModel *shot = [[ShotModel alloc] initWithDictionary: obj error: &errorModel];
-                 
-                 if (!errorModel)
-                     [shots addObject:shot];
-             }];
-         }
-         
-         if (complete)
-             complete(shots, totalPages, error);
-     }];
+    [self.baseService GET:URL
+               parameters:params
+                 complete:^(NSURLResponse *response, id responseObject, NSError *error) {
+                     NSMutableArray *shots = [NSMutableArray new];
+                     NSInteger totalPages = 0;
+                     
+                     if (!error) {
+                         NSDictionary *responseDictionary = (NSDictionary *)responseObject;
+                         totalPages = [[responseDictionary objectForKey:@"pages"] integerValue];
+                         NSArray *items = [NSArray arrayWithArray: [responseDictionary objectForKey:@"shots"]];
+                         
+                         [items enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
+                             NSError *errorModel = nil;
+                             ShotModel *shot = [[ShotModel alloc] initWithDictionary: obj error: &errorModel];
+                             
+                             if (!errorModel)
+                                 [shots addObject:shot];
+                         }];
+                     }
+                     
+                     if (complete)
+                         complete(shots, totalPages, error);
+                 }];
 }
 
 
