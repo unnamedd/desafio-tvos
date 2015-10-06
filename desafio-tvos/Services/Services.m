@@ -78,9 +78,9 @@
 }
 
 - (void) downloadImageWithURL:(NSString *) URLString complete:(ServiceResultImageBlock) complete {
-    NSURL *URL = [self URL: URLString serializeParameters: nil];
     
-    [[self.baseSession downloadTaskWithURL: URL completionHandler:^(NSURL * location, NSURLResponse * response, NSError * error) {
+    [[self.baseSession downloadTaskWithURL: [NSURL URLWithString: URLString]
+                         completionHandler:^(NSURL * location, NSURLResponse * response, NSError * error) {
         if (!error) {
             
             NSData *imageData = [NSData dataWithContentsOfURL: location];
