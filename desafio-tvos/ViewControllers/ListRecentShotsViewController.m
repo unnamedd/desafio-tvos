@@ -42,7 +42,7 @@
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@""]) {
+    if ([segue.identifier isEqualToString:@"ShotSegue"]) {
         ShotViewController *viewController = [segue destinationViewController];
         viewController.shot = self.shot;
     }
@@ -89,6 +89,7 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     self.shot = [self.shots objectAtIndex: indexPath.item];
+    
     NSLog(@"Shot Mode: %@", self.shot);
 }
 
