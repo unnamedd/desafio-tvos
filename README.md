@@ -8,10 +8,19 @@ No dia 6 de outubro de 2015 foi apresentada no **[Coders on Beer](http://www.mee
 Requerimentos
 - Xcode 7.1
 
-## Contact
+
+
+## Contato
 
 - [Thiago Holanda](mailto:thiago.holanda@concretesolutions.com.br)
 - [Eduardo Rangel](mailto:eduardo.rangel@concretesolutions.com.br)
+
+## Agradecimentos
+- Luciana Nasr 
+- Erick Santos 
+- Alexandre Nascimento
+- Gabriel Brettas
+- Guilherme Siepmann
 
 ## Licença
 
