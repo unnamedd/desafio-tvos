@@ -30,7 +30,6 @@
 		89F4B4891BB33047005A7058 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F4B4881BB33047005A7058 /* AppDelegate.m */; };
 		89F4B4911BB33047005A7058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F4B4901BB33047005A7058 /* Assets.xcassets */; };
 		89F4B49C1BB33047005A7058 /* desafio_tvosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F4B49B1BB33047005A7058 /* desafio_tvosTests.m */; };
-		CFBAE0F01BDB3563EFB7F36F /* libPods-desafio-tvos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 411C586B88A4287479E4E1F1 /* libPods-desafio-tvos.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +47,6 @@
 		28A785B21BC3148E00E309E5 /* ShotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShotViewController.m; sourceTree = "<group>"; };
 		28B4C1E51BC2F90C0059C73B /* ListRecentShotsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListRecentShotsViewController.h; sourceTree = "<group>"; };
 		28B4C1E61BC2F90C0059C73B /* ListRecentShotsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListRecentShotsViewController.m; sourceTree = "<group>"; };
-		38FE98739EAE32EA0A162335 /* Pods-desafio-tvos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-tvos.release.xcconfig"; path = "Pods/Target Support Files/Pods-desafio-tvos/Pods-desafio-tvos.release.xcconfig"; sourceTree = "<group>"; };
-		411C586B88A4287479E4E1F1 /* libPods-desafio-tvos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-desafio-tvos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8975A2541BB337510012C1E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8975A2561BB3384F0012C1E1 /* Models.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
 		8975A2571BB3397A0012C1E1 /* ShotModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShotModel.h; sourceTree = "<group>"; };
@@ -93,7 +90,6 @@
 		89F4B4971BB33047005A7058 /* desafio-tvosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "desafio-tvosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F4B49B1BB33047005A7058 /* desafio_tvosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = desafio_tvosTests.m; sourceTree = "<group>"; };
 		89F4B49D1BB33047005A7058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C803EA4B1B5699003B0DD584 /* Pods-desafio-tvos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-tvos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-desafio-tvos/Pods-desafio-tvos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +97,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFBAE0F01BDB3563EFB7F36F /* libPods-desafio-tvos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,14 +110,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E04030087F248B7963E5CEC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				411C586B88A4287479E4E1F1 /* libPods-desafio-tvos.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		8975A24E1BB336EC0012C1E1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,8 +252,6 @@
 				89F4B4831BB33046005A7058 /* desafio-tvos */,
 				89F4B49A1BB33047005A7058 /* desafio-tvosTests */,
 				89F4B4821BB33046005A7058 /* Products */,
-				8A708B86557C6A64E4FA2718 /* Pods */,
-				2E04030087F248B7963E5CEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -314,15 +299,6 @@
 			path = "desafio-tvosTests";
 			sourceTree = "<group>";
 		};
-		8A708B86557C6A64E4FA2718 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C803EA4B1B5699003B0DD584 /* Pods-desafio-tvos.debug.xcconfig */,
-				38FE98739EAE32EA0A162335 /* Pods-desafio-tvos.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -330,11 +306,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89F4B4A01BB33047005A7058 /* Build configuration list for PBXNativeTarget "desafio-tvos" */;
 			buildPhases = (
-				D06D0A9807A8E4EC3F19E6A1 /* Check Pods Manifest.lock */,
 				89F4B47D1BB33046005A7058 /* Sources */,
 				89F4B47E1BB33046005A7058 /* Frameworks */,
 				89F4B47F1BB33046005A7058 /* Resources */,
-				A5B919A5CD81719B439B961D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -374,7 +348,6 @@
 				TargetAttributes = {
 					89F4B4801BB33046005A7058 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 83C3V38WSB;
 					};
 					89F4B4961BB33047005A7058 = {
 						CreatedOnToolsVersion = 7.1;
@@ -420,39 +393,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A5B919A5CD81719B439B961D /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-desafio-tvos/Pods-desafio-tvos-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D06D0A9807A8E4EC3F19E6A1 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		89F4B47D1BB33046005A7058 /* Sources */ = {
@@ -593,7 +533,6 @@
 		};
 		89F4B4A11BB33047005A7058 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C803EA4B1B5699003B0DD584 /* Pods-desafio-tvos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -613,7 +552,6 @@
 		};
 		89F4B4A21BB33047005A7058 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38FE98739EAE32EA0A162335 /* Pods-desafio-tvos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Brand Assets";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
