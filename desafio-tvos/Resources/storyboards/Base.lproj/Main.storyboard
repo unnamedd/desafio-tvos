@@ -146,7 +146,7 @@
                         <outlet property="descriptionLabel" destination="TVJ-Hm-r9e" id="xjJ-N0-rGw"/>
                         <outlet property="imageView" destination="ePu-Z9-DvT" id="3hg-ag-4zz"/>
                         <outlet property="likesLabel" destination="2Qp-Ww-ml1" id="6ck-ag-fm6"/>
-                        <outlet property="nameLabel" destination="YdP-hC-2LJ" id="poL-dS-g3a"/>
+                        <outlet property="nameLabel" destination="0Jf-bx-kfS" id="muQ-n4-16Z"/>
                         <outlet property="playerImageView" destination="T4E-Ti-OA3" id="XSR-W1-Z1b"/>
                         <outlet property="playerNameLabel" destination="YdP-hC-2LJ" id="epx-cJ-Nly"/>
                         <outlet property="viewsLabel" destination="csU-5U-7P5" id="fxL-SX-I4b"/>

@@ -10,6 +10,8 @@
 
 #import "Services.h"
 
+
+
 @interface ShotViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *playerImageView;
@@ -42,9 +44,13 @@
 
 - (void) configureData {
 
+    self.nameLabel.text = self.shotObject.title;
     self.playerNameLabel.text = self.shotObject.user.name;
     
-    
+    NSString *dateString = [NSDateFormatter localizedStringFromDate: self.shotObject.created_at
+                                                          dateStyle: NSDateFormatterShortStyle
+                                                          timeStyle: NSDateFormatterFullStyle];
+    self.dateLabel.text = dateString;
     
     // Shot image
     if (self.shotObject.images.normal) {
